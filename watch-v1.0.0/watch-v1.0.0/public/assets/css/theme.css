@@ -18545,6 +18545,69 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
 .watch-tabs .nav-item.show .nav-link {
   border-bottom-color: #757575;
 }
+/* Hero Content Ana Konumlandırma */
+.hero-content {
+    /* Ekranın dikeyde (yukarı-aşağı) ortalaması için */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Tam merkezleme */
+    text-align: center; /* Metinleri yatayda ortalama */
+    color: #fff; /* Metin rengi beyaz */
+    z-index: 10; /* Diğer her şeyin üstünde olması için */
+    width: 90%; /* Genişlik kısıtlaması */
+    max-width: 800px;
+}
+
+/* Başlık Stili */
+.hero-content h1 {
+    font-size: 4.5rem; /* Büyük ve dikkat çekici font */
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Alt Başlık Stili */
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    opacity: 0.85; /* Hafif şeffaflık */
+}
+
+/* Butonlar İçin Genel Stil */
+.cta-buttons a.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    margin: 10px;
+    border: 2px solid;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+/* Birincil Buton (Daha Vurgulu) */
+.primary-btn {
+    background-color: #A38C59; /* Altın/Sarı Tonu */
+    border-color: #A38C59;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #D4AF37; /* Hover'da daha parlak altın */
+    border-color: #D4AF37;
+}
+
+/* İkincil Buton (Daha Az Vurgulu) */
+.secondary-btn {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 /*-----------------------------------------------
 |   User Styles
