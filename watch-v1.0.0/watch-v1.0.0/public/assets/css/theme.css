@@ -55,13 +55,33 @@
 }
 
 body {
+
+   /* İki arka plan katmanı tanımlıyoruz (Virgülle Ayrılmış) */
+    background: 
+        /* 1. KATMAN: GÖRSEL (Ön Plan) */
+        /* Sağ kenara yaslanır, tekrar etmez, sabittir */
+        url('../img/gallery/download.png') no-repeat right center fixed, 
+        
+        /* 2. KATMAN: DÜZ RENK (Arka Plan) */
+        /* Sayfanın tamamını kaplayacak krem rengi */
+        #FAD974; 
+
+    /* BOYUTLANDIRMA */
+    /* İlk değer görsel için (%50 en, %100 boy), ikinci değer renk için (tamamı) */
+    background-size: 50vw 100vh, auto; 
+    
+    /* Bu komut, görselin arkasında kalan alanı göstermeyi garantiler */
+    background-clip: padding-box, border-box; 
+    
+    /* ... Diğer stilleriniz (color, font-family, margin vb.) ... */
+
   margin: 0;
   font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #BDBDBD;
-  background-color: #000;
+  color: #000000;
+  background-color: #61380267 ;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -4636,6 +4656,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link {
+  color: #ffffff !important;
   display: block;
   padding: 0.5rem 1rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -4650,9 +4671,15 @@ fieldset:disabled .btn {
     transition: none;
   }
 }
+.nav-link.fw-bold {
+    color: #ffffff !important;
+}
+.nav-link.active {
+    color: #ffffff !important; /* Aktif linki tamamen siyah yapabiliriz */
+}
 
 .nav-link.disabled {
-  color: #9E9E9E;
+ color: #ffffff !important;
   pointer-events: none;
   cursor: default;
 }
@@ -7898,6 +7925,16 @@ fieldset:disabled .btn {
 
 .min-vw-100 {
   min-width: 100vw !important;
+  
+
+  
+}
+/* Bu sınıf, row'un tam ekran yüksekliğinde olmasını sağlar */
+.min-vh-100 {
+    min-height: calc(100vh - 60px) !important;
+}
+.hero-section-padding {
+    padding-top: 60px; 
 }
 
 .h-25 {
@@ -9512,7 +9549,7 @@ fieldset:disabled .btn {
 }
 
 .text-light {
-  color: #F9FAFD !important;
+ color: #ffffff !important;
 }
 
 .text-dark {
@@ -17451,6 +17488,14 @@ ul {
 |   Backgrounds
 -----------------------------------------------*/
 .bg-holder {
+  
+    /* Eski arka plan görselini kaldırıyoruz */
+    background-image: none !important; 
+    /* Rengi beyaz yapıyoruz */
+   
+    /* Yüksekliği sayfanın en üstünden alta kadar yayılması için ayarlayın */
+    min-height: 100vh; /* Ekran yüksekliğinin tamamı */
+
   position: absolute;
   width: 100%;
   min-height: 100%;
@@ -18548,25 +18593,24 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
 /* Hero Content Ana Konumlandırma */
 .hero-content {
     /* Ekranın dikeyde (yukarı-aşağı) ortalaması için */
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Tam merkezleme */
-    text-align: center; /* Metinleri yatayda ortalama */
-    color: #fff; /* Metin rengi beyaz */
+   
+    
+   text-align: left !important; /* Metinleri yatayda ortalama */
+    color: #333 !important; 
     z-index: 10; /* Diğer her şeyin üstünde olması için */
     width: 90%; /* Genişlik kısıtlaması */
     max-width: 800px;
+
 }
 
 /* Başlık Stili */
 .hero-content h1 {
-    font-size: 4.5rem; /* Büyük ve dikkat çekici font */
-    font-weight: 700;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+    font-size: 3.8rem; /* Büyük ve dikkat çekici font */
+    font-weight: 800;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    color: #ffffff !important; 
 }
-
 /* Alt Başlık Stili */
 .hero-content p {
     font-size: 1.5rem;
@@ -18598,17 +18642,111 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
     border-color: #D4AF37;
 }
 
-/* İkincil Buton (Daha Az Vurgulu) */
 .secondary-btn {
-    background-color: transparent;
-    border-color: #fff;
-    color: #fff;
+    /* Önceki şeffaf arkaplanı değiştiriyoruz: */
+    background-color: #D4AF37 !important; /* Altın Rengi Dolgu */
+    border-color: #D4AF37 !important;
+    color: #333 !important; /* Metin rengi koyu olsun */
 }
 
 .secondary-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #A38C59 !important; /* Hover'da hafif koyu altın */
+    border-color: #A38C59 !important;
+    color: #fff !important; /* Hover'da metin rengi beyaz olsun */
+}
+/* Görselin Daha Belirgin Olması İçin */
+.hero-product-img {
+    max-height: 500px; /* Görseli çok büyütmemek için */
+    margin-top: 30px; 
+    /* Opsiyonel: Eğer görselin hafif parlamasını isterseniz */
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4)); 
 }
 
+/* Hero Content'in sol tarafta kalması için (Daha önceki ortalama CSS'ini kaldırın) */
+.hero-content {
+    /* Daha önceki absolute/translate stillerini KALDIRIN veya BURADAKİLERLE DEĞİŞTİRİN */
+    position: static; 
+    text-align: left; /* Metni sola hizala */
+    padding-right: 20px;
+}
+.hero-content h1 {
+    font-size: 3.5rem; /* Yan yana sığması için küçülttük */
+}
+/* Kategori Kartları Genel Stili */
+.category-card {
+    position: relative; /* Overlay'in konumlanması için gerekli */
+    overflow: hidden; /* Taşmaları engeller */
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Görsel Stili */
+.category-card img {
+    width: 100%;
+    height: 350px; /* Sabit bir yükseklik vererek görselleri hizalar */
+    object-fit: cover; /* Görselin alanı kaplamasını sağlar */
+    transition: transform 0.5s ease;
+}
+
+/* Kartın üzerine gelindiğinde görselin hafif büyümesi */
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Görsel Üzerindeki Kaplama (Overlay) Stili */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Hafif karartma */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+/* Kategori Başlığı Stili */
+.card-overlay .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* BURASI SİZİN ARADIĞINIZ BUTON STİLİDİR */
+.category-btn {
+    background-color: transparent;
+    /* Arka planı beyaz yaptığımız için koyu renk çerçeve kullanıyoruz */
+    border: 2px solid #333; 
+    color: #fff; 
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.category-btn:hover {
+    background-color: #333; /* Hover'da koyu dolgu */
+    color: #fff;
+}
+/* Navigasyon Çubuğundaki Logo Boyutu */
+.navbar-logo {
+    height: 200px; /* Logoyu 40 piksel yüksekliğinde sabitleyelim */
+    width: auto;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 /*-----------------------------------------------
 |   User Styles
 -----------------------------------------------*/
