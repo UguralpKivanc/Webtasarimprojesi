@@ -18752,3 +18752,94 @@ html, body {
 -----------------------------------------------*/
 
 /*# sourceMappingURL=theme.css.map */
+/* Yorum Kartları Genel Stili (Sınıf: .card) */
+.col-md-6 .card {
+    /* Eski siyah arka planı temizliyoruz */
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Yarı saydam beyaz/krem */
+    color: #333 !important; /* Metinleri koyu gri yapıyoruz */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #D4AF37; /* Altın rengi vurgu çizgisi */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Yumuşak bir gölge */
+    min-height: 200px;
+}
+
+/* Yorum Metinleri */
+.review-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #333; /* Okunurluk için koyu metin */
+    margin-bottom: 20px;
+}
+
+/* Yorumcu Adı (h6 etiketi) */
+.card h6 {
+    font-weight: 700 !important;
+    color: #555 !important;
+}
+
+/* Yorumcu Görseli */
+.card .img-fluid {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    
+}
+/* Footer (Alt Bilgi) Genel Stili */
+footer {
+    padding-top: 50px!important;
+    padding-bottom: 30px!important;
+}
+
+/* Footer Başlıkları (MENU, Contact Us, Signup for Our Latest News) */
+footer h5 {
+    color: #333 !important; /* Başlıkları koyu gri yap */
+    font-weight: 700 !important;
+}
+
+/* Footer Linkleri (Shipping Info, How to Order, vb.) */
+.list-unstyled a {
+    color: #555 !important; /* Linkleri okunabilir koyu ton yap */
+    text-decoration: none!important;
+    font-size: 0.9rem!important;
+    transition: color 0.3s!important;
+}
+
+.list-unstyled a:hover {
+    color: #D4AF37 !important; /* Hover'da Altın rengi vurgu */
+}
+/* Abonelik Alanı Başlığı (.col-12 col-xl-3 içindeki h5) */
+.col-xl-3 > h5 {
+    white-space: nowrap!important; /* Başlığın tek satırda kalmasını sağlar */
+}
+
+/* Formun Kendisi (input-group yapısını kullanır) */
+.input-group {
+    /* Form elemanlarını yatayda esnek tutar */
+    display: flex!important;
+    max-width: 300px!important;
+}
+
+/* E-posta Giriş Alanı */
+.input-group .form-control {
+    border-radius: 5px 0 0 5px !important; /* Sol taraf yuvarlak, sağ taraf düz */
+    padding: 10px 15px!important;
+    height: auto!important;
+}
+
+/* Submit Butonu */
+.input-group button.btn-primary {
+    background-color: #D4AF37 !important; /* Altın rengi buton */
+    border-color: #D4AF37 !important;
+    color: #fff !important;
+    border-radius: 0 5px 5px 0 !important; /* Sol taraf düz, sağ taraf yuvarlak */
+    padding: 10px 15px!important;
+    font-weight: 600!important;
+}
+
+.input-group button.btn-primary:hover {
+    background-color: #A38C59 !important;
+    border-color: #A38C59 !important;
+}
