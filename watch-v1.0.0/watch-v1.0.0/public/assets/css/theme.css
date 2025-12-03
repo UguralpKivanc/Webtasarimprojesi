@@ -18843,3 +18843,34 @@ footer h5 {
     background-color: #A38C59 !important;
     border-color: #A38C59 !important;
 }
+/* Genel Kart Stili */
+.duyuru-tam-detay-card {
+    border: 1px solid #EFEBE0; /* Hafif bir kenarlık */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.duyuru-tam-detay-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Kart Başlık Alanı */
+.duyuru-tam-detay-card .card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px 20px;
+}
+
+/* Görsel Stili */
+.duyuru-tam-detay-card img.duyuru-img {
+    height: auto;
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+/* Yorum Kartlarını Temizleme (Eğer bg-black kullanıyorsa) */
+.card-h-100 { /* Veya yorum kartının ana class adı */
+    background-color: #ffffff !important; /* Beyaz veya yarı saydam yapın */
+    color: #333 !important; /* Metinleri koyu yapın */
+}
