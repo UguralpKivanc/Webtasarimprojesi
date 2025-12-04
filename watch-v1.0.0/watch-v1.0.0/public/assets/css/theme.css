@@ -18874,3 +18874,22 @@ footer h5 {
     background-color: #ffffff !important; /* Beyaz veya yarı saydam yapın */
     color: #333 !important; /* Metinleri koyu yapın */
 }
+/* Alt Menü (Dropdown) Görünürlüğü ve Stili */
+.dropdown-menu {
+    /* Menünün görünür olmasını garanti eder */
+ 
+    
+    /* Konumu ve arka planı ayarlar */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000; /* Her şeyin üstünde görünmesini sağlar */
+    background-color: #f8f8f8; /* Açık krem arka plan */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+/* Navigasyon menüsündeki link metinlerinin görünürlüğünü garanti eder */
+.dropdown-item {
+    color: #333 !important; /* Koyu renk yapar */
+}
