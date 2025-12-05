@@ -56,24 +56,22 @@
 
 body {
 
-   /* İki arka plan katmanı tanımlıyoruz (Virgülle Ayrılmış) */
+
+
     background: 
-        /* 1. KATMAN: GÖRSEL (Ön Plan) */
-        /* Sağ kenara yaslanır, tekrar etmez, sabittir */
+      
         url('../img/gallery/download.png') no-repeat right center fixed, 
         
-        /* 2. KATMAN: DÜZ RENK (Arka Plan) */
-        /* Sayfanın tamamını kaplayacak krem rengi */
+       
         #FAD974; 
 
-    /* BOYUTLANDIRMA */
-    /* İlk değer görsel için (%50 en, %100 boy), ikinci değer renk için (tamamı) */
+   
     background-size: 50vw 100vh, auto; 
     
-    /* Bu komut, görselin arkasında kalan alanı göstermeyi garantiler */
+   
     background-clip: padding-box, border-box; 
     
-    /* ... Diğer stilleriniz (color, font-family, margin vb.) ... */
+    
 
   margin: 0;
   font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -84,6 +82,8 @@ body {
   background-color: #61380267 ;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
+
 }
 
 hr {
@@ -18892,4 +18892,14 @@ footer h5 {
 /* Navigasyon menüsündeki link metinlerinin görünürlüğünü garanti eder */
 .dropdown-item {
     color: #333 !important; /* Koyu renk yapar */
+}
+/* --- Popüler Kategoriler Siyah Bant Ayarı --- */
+#categories-wrapper {
+    background: #000;       /* Siyah bant */
+    padding-top: 1cm;       /* Üstten 1 cm */
+    padding-bottom: 1cm;    /* Alttan 1 cm */
+}
+
+#categories {
+    background: transparent !important; /* Bölümün kendi rengini iptal et */
 }

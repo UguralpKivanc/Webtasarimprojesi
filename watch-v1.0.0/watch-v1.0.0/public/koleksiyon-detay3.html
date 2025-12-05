@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kıvanç Kuyumculuk - Koleksiyon Ürün Detay</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tema CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+    <style>
+        body {
+            background:
+                url('assets/img/gallery/download.png') no-repeat right center fixed,
+                #61380267;
+            background-size: 50vw 100vh, auto;
+            min-height: 100vh;
+        }
+
+        .navbar a, .navbar div {
+            color: #ffffff !important;
+        }
+
+        .product-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+        }
+
+        .price {
+            color: #D4AF37;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .btn-buy {
+            background-color: #D4AF37 !important;
+            color: white !important;
+            font-weight: bold !important;
+        }
+
+        .btn-buy:hover {
+            background-color: #A38C59 !important;
+        }
+
+        footer {
+            background-color: #222 !important;
+            padding: 60px 0 !important;
+            margin-top: 130px !important;
+        }
+
+        footer h5, footer p, footer a {
+            color: #fff !important;
+        }
+
+        footer a:hover {
+            color: #D4AF37 !important;
+        }
+
+        /* dropdown arka plan */
+        .nav-item.dropdown .dropdown-menu {
+            background-color: #ffffff !important;
+            border-radius: 10px;
+        }
+
+        .nav-item.dropdown .dropdown-menu .dropdown-item {
+            color: #333 !important;
+            font-weight: 500;
+        }
+
+        .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+            background-color: #ffffff !important;
+            color: #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-2" href="index.html">Kıvanç Kuyumculuk</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">ÜRÜNLERİMİZ</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="bilezikler.html">Bilezikler</a></li>
+                        <li><a class="dropdown-item" href="kolyeler.html">Kolyeler</a></li>
+                        <li><a class="dropdown-item" href="yuzukler.html">Yüzükler</a></li>
+                        <li><a class="dropdown-item" href="bileklikler.html">Bileklikler</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">KURUMSAL</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a class="dropdown-item" href="misyon-vizyon.html">Misyon & Vizyon</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item px-2"><a class="nav-link fw-bold" href="iletisim.html">İLETİŞİM</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-bold" href="duyurular.html">DUYURULAR</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-bold" href="sepet.html">SEPETİM</a></li>
+
+            </ul>
+
+            <div class="fw-bold">+90 (551) 355 34 34</div>
+        </div>
+    </div>
+</nav>
+
+<!-- ÜRÜN DETAY -->
+<section class="container" style="padding-top: 150px;">
+
+    <div class="row g-5">
+
+        <!-- ÜRÜN FOTOĞRAF -->
+        <div class="col-lg-6">
+            <img src="assets/img/gallery/koleksiyon2.png" alt="Koleksiyon Ürünü" class="product-img">
+        </div>
+
+        <!-- ÜRÜN BİLGİLERİ -->
+        <div class="col-lg-6">
+            <h1 class="fw-bold mb-3">1.07 Karat Baget Pırlanta Yüzük</h1>
+            <p class="price">1.000 TL</p>
+
+            <p class="mt-3">
+                Özel tasarım 1.07 karat pırlanta yüzük, modern zarafet ile klasik şıklığı bir araya getirir.
+                Usta işçilik ile hazırlanmış olup tüm taşlar sertifikalıdır.
+            </p>
+
+            <ul class="mt-3" style="line-height: 1.9;">
+                <li>• 1.07 Karat pırlanta</li>
+                <li>• Sertifikalı ürün</li>
+                <li>• Özel taş işçiliği</li>
+                <li>• El işçiliği montür</li>
+                <li>• Özel kutusunda teslim</li>
+            </ul>
+
+            <button id="addToCartBtn" class="btn btn-buy btn-lg w-100 mt-4">
+                Sepete Ekle
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3">
+                <h5 class="fw-bold mb-3">WATCH</h5>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3">
+                <h5 class="fw-bold mb-3">MENU</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Refunds</a></li>
+                    <li><a href="#">How to Order</a></li>
+                    <li><a href="#">How to Track</a></li>
+                    <li><a href="#">Size Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3">
+                <h5 class="fw-bold mb-3">Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Help/FAQ</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-xl-3">
+                <h5 class="fw-bold mb-3">Signup for News</h5>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="email address">
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+                </form>
+                <p class="mt-4 text-white">Web Sitesi Tasarımcısı: Öğrenci Adı / No</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById("addToCartBtn").addEventListener("click", function () {
+
+        const product = {
+            name: "14 AYAR ÖZEL YAPIM ALTIN YÜZÜK",
+            price: 1000,
+            image: "assets/img/gallery/koleksiyon2.png",
+            quantity: 1
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const exist = cart.find(item => item.name === product.name);
+        if (exist) {
+            exist.quantity += 1;
+        } else {
+            cart.push(product);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Ürün sepete eklendi!");
+    });
+</script>
+
+</body>
+</html>
