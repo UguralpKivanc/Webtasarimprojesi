@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kıvanç Kuyumculuk - Misyon & Vizyon</title>
+    <title>Kıvanç Kuyumculuk - Duyurular</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Tema CSS -->
+    <!-- Tema -->
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <style>
+        /* Arkaplan */
         body {
             background:
                 url('assets/img/gallery/download.png') no-repeat right center fixed,
@@ -20,71 +21,71 @@
             min-height: 100vh;
         }
 
-        .navbar a,
-        .navbar div {
+        /* Navbar - Footer Beyaz Yazı */
+        .navbar a, .navbar div, footer h5, footer a, footer p {
             color: #ffffff !important;
         }
 
+        /* Sayfa başlığı */
         h1.page-title {
             font-size: 3rem;
-            font-weight: 800;
-            color: #ffffff;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .info-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.18);
-            margin-bottom: 35px;
-            border-left: 6px solid #D4AF37;
-        }
-
-        .info-box h2 {
             font-weight: 700;
+            color: white;
+        }
+
+        /* Duyuru Kartları */
+        .announcement-card {
+            background: #fff;
+            border-radius: 12px;
+            border-left: 6px solid #D4AF37;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+        .announcement-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        .announcement-title {
+            font-weight: 700;
+            font-size: 1.5rem;
             color: #333;
-            margin-bottom: 15px;
         }
-
-        .info-box p {
-            font-size: 1.1rem;
+        .announcement-date {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .announcement-text {
             color: #555;
-            line-height: 1.7;
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
+        /* Dropdown arka plan */
+        .dropdown-menu {
+            background-color: #ffffff !important;
+            border-radius: 10px;
+        }
+        .dropdown-item {
+            color: #333 !important;
+        }
+        .dropdown-item:hover {
+            background-color: #e8e8e8 !important;
+        }
+
+        /* Footer */
         footer {
             background-color: #222 !important;
-            padding: 60px 0;
-            margin-top: 100px !important;
-        }
-        footer h5, footer p, footer a {
-            color: #fff !important;
+            padding: 60px 0 !important;
+            margin-top: 130px !important;
         }
         footer a:hover {
-            color
-            : #D4AF37 !important;
+            color: #D4AF37 !important;
         }
-        /* ÜRÜNLERİMİZ dropdown arka plan rengi */
-.nav-item.dropdown .dropdown-menu {
-    background-color: #ffffff !important; /* ARKA PLAN RENGİ */
-    border-radius: 10px;
-}
-
-/* Dropdown içindeki yazı rengi */
-.nav-item.dropdown .dropdown-menu .dropdown-item {
-    color: #333 !important;
-    font-weight: 500;
-}
-
-/* Hover rengi */
-.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-    background-color: #ffffff !important;
-    color: #000 !important;
-}
     </style>
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -92,13 +93,14 @@
     <div class="container">
         <a class="navbar-brand fw-bold fs-2" href="index.html">Kıvanç Kuyumculuk</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto">
 
+                <!-- Ürünler -->
                 <li class="nav-item dropdown px-2">
                     <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">
                         ÜRÜNLERİMİZ
@@ -111,98 +113,34 @@
                     </ul>
                 </li>
 
+                <!-- Kurumsal -->
                 <li class="nav-item dropdown px-2">
-                    <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                        KURUMSAL
-                    </a>
+                    <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">KURUMSAL</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="hakkımızda.html">Hakkımızda</a></li>
+                        <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
                         <li><a class="dropdown-item" href="misyon-vizyon.html">Misyon & Vizyon</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item px-2"><a class="nav-link fw-bold" href="iletisim.html">İLETİŞİM</a></li>
-                <li class="nav-item px-2"><a class="nav-link fw-bold" href="duyurular.html">DUYURULAR</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-bold active" href="duyurular.html">DUYURULAR</a></li>
                 <li class="nav-item px-2"><a class="nav-link fw-bold" href="admin.html">YÖNETİM PANELİ</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-bold" href="sepet.html">SEPETİM</a></li>
             </ul>
-
             <div class="fw-bold">+90 (551) 355 34 34</div>
         </div>
     </div>
 </nav>
 
-<!-- CONTENT -->
-<section class="container" style="padding-top: 150px;">
+<!-- DUYURULAR -->
+<section class="container" style="padding-top:150px; padding-bottom:80px;">
+    <h1 class="text-center page-title mb-5">Duyurular</h1>
 
-    <h1 class="page-title">Misyonumuz & Vizyonumuz</h1>
+    <div id="announcementList" class="row g-4">
 
-    <!-- MİSYON -->
-    <div class="row g-4">
+        <!-- Duyurular buraya JavaScript ile eklenecek -->
 
-    <!-- Kutu 1 -->
-    <div class="col-md-6">
-        <div class="info-box">
-            <h2>🎯 Misyonumuz</h2>
-            <p>
-                Müşterilerimize en yüksek kalite standartlarında altın ve takı ürünleri sunmak,
-                modern tasarım anlayışı ile geleneksel işçiliği bir arada kullanmak temel misyonumuzdur.
-            </p>
-        </div>
     </div>
-
-    <!-- Kutu 2 -->
-    <div class="col-md-6">
-        <div class="info-box">
-            <h2>🌟 Vizyonumuz</h2>
-            <p>
-                Ulusal ve uluslararası arenada güvenilir, yenilikçi ve sektörün öncüsü bir marka olmak vizyonumuzdur.
-            </p>
-        </div>
-    </div>
-
-    <!-- Kutu 3 -->
-    <div class="col-md-6">
-        <div class="info-box">
-            <h2>💎 Kalite Politikamız</h2>
-            <p>
-                Ürünlerimizde sertifikalı altın, birinci sınıf işçilik ve detaylı kalite kontrol süreçleri uygulanmaktadır.
-            </p>
-        </div>
-    </div>
-
-    <!-- Kutu 4 -->
-    <div class="col-md-6">
-        <div class="info-box">
-            <h2>🚀 Hedeflerimiz</h2>
-            <p>
-                Online mağazamızı büyütmek, ürün çeşitliliğimizi artırmak ve uluslararası bir marka haline gelmek ana hedeflerimizdir.
-            </p>
-        </div>
-    </div>
-
-    <!-- Kutu 5 -->
-    <div class="col-md-6">
-        <div class="info-box">
-            <h2>⚖ İlke ve Değerlerimiz</h2>
-            <p>
-                Güvenilirlik, şeffaflık, müşteri memnuniyeti, etik ticaret, modern tasarım ve sürekli gelişim ilkelerimizdir.
-            </p>
-        </div>
-    </div>
-
-    <!-- Kutu 6 (Yeni Eklenen) -->
-    <div class="col-md-6">
-        <div class="info-box">
-            <h2>🏅 Marka Gücümüz</h2>
-            <p>
-                Yılların deneyimi, güçlü müşteri portföyü ve sektördeki saygın duruşumuz ile kuyumculuk alanında güvenilen bir markayız.
-            </p>
-        </div>
-    </div>
-
-</div>
-
-
 </section>
 
 <!-- FOOTER -->
@@ -241,16 +179,44 @@
                         <button class="btn btn-primary" type="submit">Send</button>
                     </div>
                 </form>
-                <p class="mt-4 text-white">Web Sitesi Tasarımcısı: Öğrenci Adı / No</p>
             </div>
 
         </div>
     </div>
 </footer>
 
-
-<!-- Scripts -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- DUYURULARI GETİRME JS -->
+<script>
+    function loadAnnouncements() {
+        let announcements = JSON.parse(localStorage.getItem("announcements")) || [];
+
+        let list = document.getElementById("announcementList");
+        list.innerHTML = "";
+
+        if (announcements.length === 0) {
+            list.innerHTML = `<p class="text-white text-center fs-4">Henüz duyuru eklenmemiş.</p>`;
+            return;
+        }
+
+        announcements.forEach(a => {
+            let card = `
+                <div class="col-md-6">
+                    <div class="announcement-card">
+                        <div class="announcement-title">${a.title}</div>
+                        <div class="announcement-date">${a.date}</div>
+                        <div class="announcement-text">${a.text}</div>
+                    </div>
+                </div>
+            `;
+            list.innerHTML += card;
+        });
+    }
+
+    loadAnnouncements();
+</script>
 
 </body>
 </html>

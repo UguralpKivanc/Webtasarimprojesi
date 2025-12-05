@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kıvanç Kuyumculuk - Yüzükler</title>
+    <title>Kıvanç Kuyumculuk - Yüzük Detay</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Tema CSS -->
+    <!-- Tema -->
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <style>
-        /* Arka plan index ile aynı */
         body {
             background:
                 url('assets/img/gallery/download.png') no-repeat right center fixed,
@@ -21,74 +21,49 @@
             min-height: 100vh;
         }
 
-        /* Navbar metin renkleri */
         .navbar a,
         .navbar div {
             color: #ffffff !important;
-            text-decoration: none !important;
         }
 
-        /* Sayfa başlığı */
-        h1.page-title {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #ffffff !important;
-        }
-
-        /* Ürün kartları */
-        .product-card {
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            background: white;
-            transition: all 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-        }
-        .product-card img {
-            height: 250px;
-            object-fit: cover;
+        .product-image {
             width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
-        .product-info {
-            padding: 15px;
-        }
-        .product-info h4 {
+
+        .price {
+            font-size: 1.8rem;
             font-weight: bold;
-            color: #333;
+            color: #D4AF37;
         }
-        .product-info p {
-            margin: 5px 0;
-            font-weight: 500;
-            color: #555;
-        }
-        .product-info .btn {
+
+        .btn-buy {
             background-color: #D4AF37 !important;
             border-color: #D4AF37 !important;
             color: white;
-            font-weight: bold;
+            font-weight: 600;
         }
-        .product-info .btn:hover {
+
+        .btn-buy:hover {
             background-color: #A38C59 !important;
             border-color: #A38C59 !important;
         }
 
-        /* FOOTER DÜZELTME */
         footer {
             background-color: #222 !important;
             padding: 60px 0 !important;
-            margin-top: 100px !important;
+            margin-top: 100px;
         }
+
         footer h5,
         footer p,
         footer a {
             color: #fff !important;
         }
+
         footer a:hover {
             color: #D4AF37 !important;
-            text-decoration: underline !important;
         }
         /* ÜRÜNLERİMİZ dropdown arka plan rengi */
 .nav-item.dropdown .dropdown-menu {
@@ -109,6 +84,7 @@
 }
     </style>
 </head>
+
 <body>
 
     <!-- NAVBAR -->
@@ -124,10 +100,9 @@
             <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <!-- Ürünler Dropdown -->
+                    <!-- ÜRÜNLER DROPDOWN -->
                     <li class="nav-item dropdown px-2">
-                        <a class="nav-link fw-bold dropdown-toggle" href="#" id="urunlerDropdown"
-                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             ÜRÜNLERİMİZ
                         </a>
                         <ul class="dropdown-menu">
@@ -138,12 +113,13 @@
                         </ul>
                     </li>
 
-                    <!-- Kurumsal Dropdown -->
+                    <!-- KURUMSAL -->
                     <li class="nav-item dropdown px-2">
-                        <a class="nav-link fw-bold dropdown-toggle" href="#" id="kurumsalDropdown"
-                           role="button" data-bs-toggle="dropdown" aria-expanded="false">KURUMSAL</a>
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            KURUMSAL
+                        </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="hakkımızda.html">Hakkımızda</a></li>
+                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
                             <li><a class="dropdown-item" href="misyon-vizyon.html">Misyon & Vizyon</a></li>
                         </ul>
                     </li>
@@ -151,7 +127,9 @@
                     <li class="nav-item px-2"><a class="nav-link fw-bold" href="iletisim.html">İLETİŞİM</a></li>
                     <li class="nav-item px-2"><a class="nav-link fw-bold" href="duyurular.html">DUYURULAR</a></li>
                     <li class="nav-item px-2"><a class="nav-link fw-bold" href="admin.html">YÖNETİM PANELİ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link fw-bold" href="duyurular.html">DUYURULAR</a></li>
                     <li class="nav-item px-2"><a class="nav-link fw-bold" href="sepet.html">SEPETİM</a></li>
+
                 </ul>
 
                 <div class="d-flex fw-bold">+90 (551) 355 34 34</div>
@@ -159,79 +137,44 @@
         </div>
     </nav>
 
-    <!-- ÜRÜN LİSTESİ -->
+    <!-- ÜRÜN DETAY -->
     <section class="container" style="padding-top:150px; padding-bottom:80px;">
-        <h1 class="text-center page-title mb-5">Yüzük Koleksiyonumuz</h1>
 
-        <div class="row g-4">
+        <div class="row align-items-center">
 
-            <!-- Ürün 1 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="assets/img/gallery/yüzük1.png" alt="Yüzük 1">
-                    <div class="product-info">
-                        <h4>Altın Yüzük</h4>
-                        <p>Fiyat: 2.500 TL</p>
-                        <a href="yuzuk-detay1.html" class="btn w-100">Detaylı İncele</a>
-                    </div>
-                </div>
+            <!-- FOTOĞRAF -->
+            <div class="col-lg-6 mb-5">
+                <img src="assets/img/gallery/yüzük3.png" alt="Altın Yüzük" class="product-image">
             </div>
 
-            <!-- Ürün 2 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="assets/img/gallery/yüzük2.png" alt="Yüzük 2">
-                    <div class="product-info">
-                        <h4>Taşlı Yüzük</h4>
-                        <p>Fiyat: 3.750 TL</p>
-                        <a href="yuzuk-detay2.html" class="btn w-100">Detaylı İncele</a>
-                    </div>
-                </div>
+            <!-- METİN -->
+            <div class="col-lg-6">
+                <h1 class="fw-bold mb-3">Altın Yüzük Model 1</h1>
+
+                <p class="price">4.750 TL</p>
+
+                <p class="mt-3">
+                    Modern tasarımın zarafetle buluştuğu bu yüzük, günlük kullanımda ve özel davetlerde
+                    stilinizi tamamlayan eşsiz bir aksesuardır. Özel üretim teknikleri ile işlenmiş olup
+                    parlaklık ve dayanıklılık garantisi sunar.
+                </p>
+
+                <ul class="mt-3" style="line-height: 1.9;">
+                    <li>• 14 Ayar Altın</li>
+                    <li>• El işçiliği özel model</li>
+                    <li>• Şık ve modern tasarım</li>
+                    <li>• Ürün sertifikalıdır</li>
+                    <li>• Özel kutusunda teslim edilir</li>
+                </ul>
+
+                <!-- SEPETE EKLE -->
+                <button id="addToCartBtn" class="btn btn-buy btn-lg w-100 mt-4">
+                    Sepete Ekle
+                </button>
             </div>
 
-            <!-- Ürün 3 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="assets/img/gallery/yüzük3.png" alt="Yüzük 3">
-                    <div class="product-info">
-                        <h4>Özel Tasarım Yüzük</h4>
-                        <p>Fiyat: 4.450 TL</p>
-                        <a href="yuzuk-detay3.html" class="btn w-100">Detaylı İncele</a>
-                    </div>
-                </div>
-            </div>
- <div class="col-md-4">
-                <div class="product-card">
-                    <img src="assets/img/gallery/yüzük4.png" alt="Yüzük 2">
-                    <div class="product-info">
-                        <h4>Taşlı Yüzük</h4>
-                        <p>Fiyat: 3.750 TL</p>
-                        <a href="yuzuk-detay4.html" class="btn w-100">Detaylı İncele</a>
-                    </div>
-                </div>
-            </div>
-             <div class="col-md-4">
-                <div class="product-card">
-                    <img src="assets/img/gallery/yüzük5.png" alt="Yüzük 2">
-                    <div class="product-info">
-                        <h4>Taşlı Yüzük</h4>
-                        <p>Fiyat: 3.750 TL</p>
-                        <a href="yuzuk-detay5.html" class="btn w-100">Detaylı İncele</a>
-                    </div>
-                </div>
-            </div>
-             <div class="col-md-4">
-                <div class="product-card">
-                    <img src="assets/img/gallery/yüzük6.png" alt="Yüzük 2">
-                    <div class="product-info">
-                        <h4>Taşlı Yüzük</h4>
-                        <p>Fiyat: 3.750 TL</p>
-                        <a href="yuzuk-detay6.html" class="btn w-100">Detaylı İncele</a>
-                    </div>
-                </div>
-            </div>
         </div>
-        
+
     </section>
 
     <!-- FOOTER -->
@@ -279,6 +222,33 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Sepete ürün ekleme fonksiyonu
+    document.getElementById("addToCartBtn").addEventListener("click", function () {
 
+        const product = {
+            name: "Altın Bilezik",
+            price: 5500,
+            image: "assets/img/gallery/yüzük3.png",
+            quantity: 1
+        };
+
+        // LocalStorage'dan sepeti çek
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Aynı üründen varsa adet arttır
+        const exist = cart.find(item => item.name === product.name);
+        if (exist) {
+            exist.quantity += 1;
+        } else {
+            cart.push(product);
+        }
+
+        // LocalStorage’a kaydet
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Ürün sepete eklendi!");
+    });
+</script>
 </body>
 </html>

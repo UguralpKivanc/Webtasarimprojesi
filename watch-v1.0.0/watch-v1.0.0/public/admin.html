@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetim Paneli | Kıvanç Kuyumculuk</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tema CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+    <style>
+        /* Arka plan index ile aynı */
+        body {
+            background:
+                url('assets/img/gallery/download.png') no-repeat right center fixed,
+                #61380267;
+            background-size: 50vw 100vh, auto;
+            min-height: 100vh;
+        }
+
+        /* Navbar yazı renkleri */
+        .navbar a, .navbar div {
+            color: #fff !important;
+            font-weight: bold !important;
+        }
+
+        h1.page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* Kart görünümü bilezikler ile aynı */
+        .card-box {
+            border-radius: 12px;
+            overflow: hidden;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            min-height: 230px;
+        }
+        .card-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222 !important;
+            padding: 60px 0 !important;
+            margin-top: 100px !important;
+        }
+        footer *, footer a { color: #fff !important; }
+        footer a:hover { color: #D4AF37 !important; }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-2" href="index.html">Kıvanç Kuyumculuk</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item px-2"><a class="nav-link" href="index.html">ANA SAYFA</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="duyurular.html">DUYURULAR</a></li>
+                <li class="nav-item px-2"><a class="nav-link active" href="admin.html">YÖNETİM PANELİ</a></li>
+
+            </ul>
+            <div class="fw-bold">+90 (551) 355 34 34</div>
+        </div>
+
+    </div>
+</nav>
+
+<!-- GİRİŞ PANELİ -->
+<section id="loginSection" class="container text-center" style="padding-top:150px;">
+    <h1 class="page-title mb-4">Yönetici Girişi</h1>
+
+    <div class="col-md-6 mx-auto bg-white p-4 rounded shadow">
+        <input id="adminUser" class="form-control mb-3" placeholder="Kullanıcı Adı">
+        <input id="adminPass" type="password" class="form-control mb-3" placeholder="Şifre">
+        <button id="loginBtn" class="btn btn-success w-100">Giriş Yap</button>
+    </div>
+</section>
+
+<!-- ADMIN PANELİ - DUYURU YÖNETİMİ -->
+<section id="adminPanel" class="container hidden" style="padding-top:150px;">
+    <h1 class="page-title mb-5 text-center">Duyuru Yönetimi</h1>
+
+    <!-- DUYURU EKLEME FORMU -->
+    <div class="col-md-8 mx-auto bg-white p-4 rounded shadow mb-5">
+        <h4 class="fw-bold mb-3">Yeni Duyuru Ekle</h4>
+
+        <input id="title" class="form-control mb-3" placeholder="Duyuru Başlığı">
+        <textarea id="content" class="form-control mb-3" placeholder="Duyuru İçeriği" rows="4"></textarea>
+
+        <button class="btn btn-primary w-100" onclick="addAnnouncement()">Duyuruyu Kaydet</button>
+    </div>
+
+    <!-- DUYURU LİSTELEME -->
+    <div class="row g-4" id="announcementList"></div>
+</section>
+
+<!-- DUZENLEME POPUP (MODAL) -->
+<div class="modal fade" id="editModal">
+    <div class="modal-dialog">
+        <div class="modal-content p-3">
+            <h4>Duyuruyu Düzenle</h4>
+            <input id="editTitle" class="form-control mb-3">
+            <textarea id="editContent" class="form-control mb-3" rows="4"></textarea>
+            <button class="btn btn-success" onclick="saveEdit()">Kaydet</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="mt-5">
+    <div class="container">
+        <p>Kıvanç Kuyumculuk © 2025</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* -------------------------
+      ADMİN GİRİŞ 
+------------------------- */
+const correctUser = "admin";
+const correctPass = "1234";
+
+document.getElementById("loginBtn").onclick = function () {
+    let u = document.getElementById("adminUser").value;
+    let p = document.getElementById("adminPass").value;
+
+    if (u === correctUser && p === correctPass) {
+        document.getElementById("loginSection").classList.add("hidden");
+        document.getElementById("adminPanel").classList.remove("hidden");
+    } else {
+        alert("Hatalı giriş!");
+    }
+};
+
+/* -------------------------
+      DUYURULAR 
+------------------------- */
+let editIndex = null;
+
+function loadAnnouncements() {
+    let list = JSON.parse(localStorage.getItem("announcements")) || [];
+    let html = "";
+
+    list.forEach((a, i) => {
+        html += `
+        <div class="col-md-4">
+            <div class="card-box">
+                <h4 class="card-title">${a.title}</h4>
+                <p>${a.content}</p>
+                <button class="btn btn-warning btn-sm w-100 mb-2" onclick="editAnnouncement(${i})">Düzenle</button>
+                <button class="btn btn-danger btn-sm w-100" onclick="deleteAnnouncement(${i})">Sil</button>
+            </div>
+        </div>`;
+    });
+
+    document.getElementById("announcementList").innerHTML = html;
+}
+
+function addAnnouncement() {
+    let title = document.getElementById("title").value;
+    let content = document.getElementById("content").value;
+
+    if (!title || !content) return alert("Lütfen tüm alanları doldurun!");
+
+    let list = JSON.parse(localStorage.getItem("announcements")) || [];
+    list.push({ title, content });
+
+    localStorage.setItem("announcements", JSON.stringify(list));
+
+    loadAnnouncements();
+    document.getElementById("title").value = "";
+    document.getElementById("content").value = "";
+}
+
+function deleteAnnouncement(i) {
+    let list = JSON.parse(localStorage.getItem("announcements")) || [];
+    list.splice(i, 1);
+    localStorage.setItem("announcements", JSON.stringify(list));
+    loadAnnouncements();
+}
+
+function editAnnouncement(i) {
+    editIndex = i;
+
+    let list = JSON.parse(localStorage.getItem("announcements"));
+    document.getElementById("editTitle").value = list[i].title;
+    document.getElementById("editContent").value = list[i].content;
+
+    new bootstrap.Modal(document.getElementById("editModal")).show();
+}
+
+function saveEdit() {
+    let list = JSON.parse(localStorage.getItem("announcements"));
+    list[editIndex].title = document.getElementById("editTitle").value;
+    list[editIndex].content = document.getElementById("editContent").value;
+    localStorage.setItem("announcements", JSON.stringify(list));
+
+    loadAnnouncements();
+    bootstrap.Modal.getInstance(document.getElementById("editModal")).hide();
+}
+
+loadAnnouncements();
+
+</script>
+
+</body>
+</html>

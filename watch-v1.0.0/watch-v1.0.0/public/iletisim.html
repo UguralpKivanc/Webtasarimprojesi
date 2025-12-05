@@ -25,7 +25,7 @@
         /* 2. HEADER VE FOOTER METİN RENGİ DÜZELTMELERİ */
         /* Krem arka planda metinlerin Koyu (#333) olmasını garantiler */
         .navbar a, .navbar div, footer h5, footer a, footer p {
-            color: #333 !important;
+            color: #ffffff !important;
             text-decoration: none !important;
         }
 
@@ -60,6 +60,38 @@
         }
         @media (min-width: 992px) {
             body { padding-top: 100px; }
+        }
+        /* ÜRÜNLERİMİZ dropdown arka plan rengi */
+.nav-item.dropdown .dropdown-menu {
+    background-color: #ffffff !important; /* ARKA PLAN RENGİ */
+    border-radius: 10px;
+}
+
+/* Dropdown içindeki yazı rengi */
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #333 !important;
+    font-weight: 500;
+}
+
+/* Hover rengi */
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #ffffff !important;
+    color: #000 !important;
+}footer {
+            background-color: #222 !important;
+            padding: 60px 0;
+            margin-top: 100px !important;
+        }
+
+        footer h5,
+        footer p,
+        footer a {
+            color: #fff !important;
+        }
+
+        footer a:hover {
+            color: #D4AF37 !important;
+            text-decoration: underline !important;
         }
     </style>
 </head>
