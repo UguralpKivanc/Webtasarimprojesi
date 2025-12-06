@@ -58,18 +58,7 @@ body {
 
 
 
-    background: 
-      
-        url('../img/gallery/download.png') no-repeat right center fixed, 
-        
-       
-        #FAD974; 
-
-   
-    background-size: 50vw 100vh, auto; 
-    
-   
-    background-clip: padding-box, border-box; 
+ 
     
     
 
@@ -18674,6 +18663,7 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* Kategori Kartları Genel Stili */
 .category-card {
+   background-color: #fff !important;
     position: relative; /* Overlay'in konumlanması için gerekli */
     overflow: hidden; /* Taşmaları engeller */
     border-radius: 5px;
@@ -18843,32 +18833,7 @@ footer h5 {
     background-color: #A38C59 !important;
     border-color: #A38C59 !important;
 }
-/* Genel Kart Stili */
-.duyuru-tam-detay-card {
-    border: 1px solid #EFEBE0; /* Hafif bir kenarlık */
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
 
-.duyuru-tam-detay-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Kart Başlık Alanı */
-.duyuru-tam-detay-card .card-header {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 15px 20px;
-}
-
-/* Görsel Stili */
-.duyuru-tam-detay-card img.duyuru-img {
-    height: auto;
-    max-height: 250px;
-    width: 100%;
-    object-fit: cover;
-}
 /* Yorum Kartlarını Temizleme (Eğer bg-black kullanıyorsa) */
 .card-h-100 { /* Veya yorum kartının ana class adı */
     background-color: #ffffff !important; /* Beyaz veya yarı saydam yapın */
@@ -18894,12 +18859,70 @@ footer h5 {
     color: #333 !important; /* Koyu renk yapar */
 }
 /* --- Popüler Kategoriler Siyah Bant Ayarı --- */
-#categories-wrapper {
-    background: #000;       /* Siyah bant */
-    padding-top: 1cm;       /* Üstten 1 cm */
-    padding-bottom: 1cm;    /* Alttan 1 cm */
-}
+
 
 #categories {
     background: transparent !important; /* Bölümün kendi rengini iptal et */
+}
+
+/* Duyuru resmi büyüklüğü */
+.duyuru-resim {
+    max-width: 90%; /* Kolonun tamamını kaplasın */
+    height: auto;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+     margin-top: 90px !important; 
+}
+
+/* Başlık ve alt yazı */
+.duyuru-baslik {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.duyuru-alt-yazi {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Buton */
+.duyuru-btn {
+    display: inline-block;
+    background-color: #685831;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.duyuru-btn:hover {
+    background-color: #8b5c09;
+    transform: scale(1.05);
+}
+
+/* Responsive: Küçük ekranlarda alt alta */
+@media (max-width: 991px) {
+    .hero-duyuru-container .row {
+        flex-direction: column;
+    }
+    .duyuru-baslik {
+        font-size: 36px;
+    }
+    .duyuru-alt-yazi {
+        font-size: 22px;
+    }
+}
+.populer-kategoriler-bolum {
+    margin-top: 120px !important;  /* İstersen 150-200 yapabilirsin */
+}
+.site-logo {
+    width:105px;   /* küçük logo için idealdir, istersen büyütebilirsin */
+    height: auto;
 }

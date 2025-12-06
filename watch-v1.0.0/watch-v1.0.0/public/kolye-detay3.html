@@ -12,14 +12,12 @@
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <style>
-        body {
-            background:
-                url('assets/img/gallery/download.png') no-repeat right center fixed,
-                #61380267;
-            background-size: 50vw 100vh, auto;
-            min-height: 100vh;
-        }
-
+     html, body {
+    background: url('assets/img/gallery/arkaplan3.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+  
+    height: 100vh;}
         .navbar a, .navbar div {
             color: #ffffff !important;
         }
@@ -76,6 +74,24 @@
     background-color: #ffffff !important;
     color: #000 !important;
 }
+.product-details p,
+.product-details ul,
+.product-details ul li {
+    color: #ffffff;
+}
+.product-img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+    
+    /* Keskinlik için */
+    image-rendering: auto; /* default, bazı durumlarda daha net olabilir */
+    image-rendering: crisp-edges; /* pikselli görünümleri keskinleştirir */
+    image-rendering: pixelated; /* çok düşük çözünürlükte pikselli etkisi */
+    
+    /* Alternatif olarak kontrast ve keskinlik artırma */
+    filter: contrast(1.2) saturate(1.1);
+}
     </style>
 </head>
 
@@ -128,13 +144,13 @@
 
         <!-- ÜRÜN FOTOĞRAF -->
         <div class="col-lg-6">
-            <img src="assets/img/gallery/kolye3.png" alt="Altın Kolye" class="product-img">
+            <img src="assets/img/gallery/kolye3.png" alt="Pullu Zincir" class="product-img">
         </div>
 
         <!-- ÜRÜN BİLGİLERİ -->
-        <div class="col-lg-6">
-            <h1 class="fw-bold mb-3">Altın Kolye</h1>
-            <p class="price">3.200 TL</p>
+        <div class="col-lg-6 product-details">
+            <h1 class="fw-bold mb-3">Pullu Zincir</h1>
+            <p class="price">33.850 TL</p>
 
             <p class="mt-3">
                 Modern ve zarif tasarıma sahip bu altın kolye, hem günlük kullanım hem de özel günler için
@@ -266,8 +282,8 @@ footer .form-control {
     document.getElementById("addToCartBtn").addEventListener("click", function () {
 
         const product = {
-            name: "Altın Kolye",
-            price: 3200,
+            name: "Pullu Zincir",
+            price: 33850,
             image: "assets/img/gallery/kolye3.png",
             quantity: 1
         };

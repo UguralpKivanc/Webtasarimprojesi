@@ -5,36 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kıvanç Kuyumculuk - Bilezikler</title>
 
-    <!-- Bootstrap CSS -->
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Tema CSS -->
+   
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <style>
-        /* Arka plan index ile aynı */
-        body {
-            background:
-                url('assets/img/gallery/download.png') no-repeat right center fixed,
-                #61380267;
-            background-size: 50vw 100vh, auto;
-            min-height: 100vh;
-        }
-
-        /* Navbar/Footer renk düzeltmeleri */
+   html, body {
+    background: url('assets/img/gallery/arkaplan3.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+  
+    height: 100vh;}
+        
         .navbar a, .navbar div, footer h5, footer a, footer p {
             color: #ffffff !important;
             text-decoration: none !important;
         }
 
-        /* Sayfa başlığı */
+       
         h1.page-title {
             font-size: 3rem;
             font-weight: 700;
             color: #ffffff !important;
         }
 
-        /* Ürün kartları */
         .product-card {
             border-radius: 12px;
             overflow: hidden;
@@ -74,39 +70,37 @@
             border-color: #A38C59 !important;
             
         }
-        /* FOOTER DÜZELTMELERİ – RENGİ VE POZİSYONU DÜZGÜN OLACAK */
 
-/* Footer arka planını koyu yapıyoruz */
 footer {
     background-color: #222 !important;
     padding: 60px 0 !important;
     margin-top: 100px !important;
 }
 
-/* Footer yazı renkleri */
+
 footer h5,
 footer p,
 footer a {
     color: #fff !important;
 }
 
-/* Footer link hover */
+
 footer a:hover {
     color: #D4AF37 !important;
     text-decoration: underline !important;
-}/* ÜRÜNLERİMİZ dropdown arka plan rengi */
+}
 .nav-item.dropdown .dropdown-menu {
-    background-color: #ffffff !important; /* ARKA PLAN RENGİ */
+    background-color: #ffffff !important; 
     border-radius: 10px;
 }
 
-/* Dropdown içindeki yazı rengi */
+
 .nav-item.dropdown .dropdown-menu .dropdown-item {
     color: #333 !important;
     font-weight: 500;
 }
 
-/* Hover rengi */
+
 .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
     background-color: #ffffff !important;
     color: #000 !important;
@@ -116,7 +110,6 @@ footer a:hover {
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block">
         <div class="container">
             <a class="navbar-brand fw-bold fs-2" href="index.html">Kıvanç Kuyumculuk</a>
@@ -129,7 +122,7 @@ footer a:hover {
             <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <!-- Ürünler Dropdown -->
+                   
                     <li class="nav-item dropdown px-2">
                         <a class="nav-link fw-bold dropdown-toggle" href="#" id="urunlerDropdown"
                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -143,7 +136,7 @@ footer a:hover {
                         </ul>
                     </li>
 
-                    <!-- Kurumsal Dropdown -->
+              
                     <li class="nav-item dropdown px-2">
                         <a class="nav-link fw-bold dropdown-toggle" href="#" id="kurumsalDropdown"
                            role="button" data-bs-toggle="dropdown" aria-expanded="false">KURUMSAL</a>
@@ -159,49 +152,46 @@ footer a:hover {
                     <li class="nav-item px-2"><a class="nav-link fw-bold" href="sepet.html">SEPETİM</a></li>
                 </ul>
 
-                <!-- Telefon -->
                 <div class="d-flex fw-bold">+90 (551) 355 34 34</div>
             </div>
         </div>
     </nav>
 
-    <!-- ÜRÜN LİSTESİ -->
+
     <section class="container" style="padding-top:150px; padding-bottom:80px;">
         <h1 class="text-center page-title mb-5">Bilezik Koleksiyonumuz</h1>
 
         <div class="row g-4">
 
-            <!-- Ürün 1 -->
+
             <div class="col-md-4">
                 <div class="product-card">
                     <img src="assets/img/gallery/bilezik4.png" alt="Bilezik">
                     <div class="product-info">
-                        <h4>Altın Bilezik</h4>
-                        <p>Fiyat: 5.500 TL</p>
+                        <h4>Zigzag Ajda Bilezik</h4>
+                        <p>Fiyat: 60.500 TL</p>
                         <a href="bilezik-detay.html" class="btn btn-sm w-100 mt-2">Detaylı İncele</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Ürün 2 -->
             <div class="col-md-4">
                 <div class="product-card">
                     <img src="assets/img/gallery/bilezik8.png" alt="Bilezik 2">
                     <div class="product-info">
-                        <h4>İşlemeli Altın Bilezik</h4>
-                        <p>Fiyat: 7.200 TL</p>
+                        <h4>Yaprak Model Bİlezik</h4>
+                        <p>Fiyat: 89.000 TL</p>
                         <a href="bilezik-detay2.html" class="btn btn-sm w-100 mt-2">Detaylı İncele</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Ürün 3 -->
             <div class="col-md-4">
                 <div class="product-card">
                     <img src="assets/img/gallery/bilezik1.png" alt="Bilezik 3">
                     <div class="product-info">
-                        <h4>Sade Altın Bilezik</h4>
-                        <p>Fiyat: 4.800 TL</p>
+                        <h4>Ağaçkabuğu Model Bilezik</h4>
+                        <p>Fiyat: 98.800 TL</p>
                         <a href="bilezik-detay3.html" class="btn btn-sm w-100 mt-2">Detaylı İncele</a>
                     </div>
                 </div>
@@ -210,8 +200,8 @@ footer a:hover {
                 <div class="product-card">
                     <img src="assets/img/gallery/bilezik2.png" alt="Bilezik 3">
                     <div class="product-info">
-                        <h4>Sade Altın Bilezik</h4>
-                        <p>Fiyat: 4.800 TL</p>
+                        <h4>Trabzon Hasır Model Bilezik</h4>
+                        <p>Fiyat: 75.500 TL</p>
                         <a href="bilezik-detay4.html" class="btn btn-sm w-100 mt-2">Detaylı İncele</a>
                     </div>
                 </div>
@@ -220,8 +210,8 @@ footer a:hover {
                 <div class="product-card">
                     <img src="assets/img/gallery/bilezik7.png" alt="Bilezik 3">
                     <div class="product-info">
-                        <h4>Sade Altın Bilezik</h4>
-                        <p>Fiyat: 4.800 TL</p>
+                        <h4>Üçlü Burma Bilezik</h4>
+                        <p>Fiyat: 188.000 TL</p>
                         <a href="bilezik-detay5.html" class="btn btn-sm w-100 mt-2">Detaylı İncele</a>
                     </div>
                 </div>
@@ -230,24 +220,23 @@ footer a:hover {
                 <div class="product-card">
                     <img src="assets/img/gallery/bilezik9.png" alt="Bilezik 3">
                     <div class="product-info">
-                        <h4>Sade Altın Bilezik</h4>
-                        <p>Fiyat: 4.800 TL</p>
+                        <h4>Setina Model Bilezik</h4>
+                        <p>Fiyat: 37.000 TL</p>
                         <a href="bilezik-detay6.html" class="btn btn-sm w-100 mt-2">Detaylı İncele</a>
                     </div>
                 </div>
             </div>
 
-            <!-- DEVAM EDEN ÜRÜNLER (istersen admin paneli ile otomatik bağlarız) -->
-
+       
         </div>
     </section>
 
-    <!-- FOOTER -->
+
 <footer class="footer mt-5">
     <div class="container py-5">
         <div class="row text-center text-lg-start align-items-start">
 
-            <!-- Hızlı Menü -->
+  
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">MENÜ</h5>
                 <ul class="list-unstyled">
@@ -259,7 +248,7 @@ footer a:hover {
                 </ul>
             </div>
 
-            <!-- Sosyal Medya -->
+
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">SOSYAL MEDYA</h5>
                 <ul class="list-unstyled">
@@ -267,7 +256,6 @@ footer a:hover {
                 </ul>
             </div>
 
-            <!-- İletişim -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">İLETİŞİM</h5>
                 <ul class="list-unstyled">
@@ -277,7 +265,6 @@ footer a:hover {
                 </ul>
             </div>
 
-            <!-- Bültene Kayıt -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">BÜLTENE KAYIT OL</h5>
                 <form>
@@ -294,13 +281,13 @@ footer a:hover {
 </footer>
 
 <style>
-/* Footer arka plan */
+
 footer.footer {
     background-color: #222 !important;
     padding: 60px 0 !important;
 }
 
-/* Yazı renkleri ve linkler */
+
 footer h5,
 footer p,
 footer span,
@@ -309,19 +296,19 @@ footer a.footer-link {
     text-decoration: none;
 }
 
-/* Link hover efekti */
+
 footer a.footer-link:hover {
-    color: #D4AF37 !important; /* Altın sarısı */
+    color: #D4AF37 !important; 
     text-decoration: underline;
 }
 
-/* Buton hover */
+
 footer .btn-primary:hover {
     background-color: #8b5c09;
     border-color: #8b5c09;
 }
 
-/* Responsive düzen için row flex */
+
 footer .row {
     display: flex;
     flex-wrap: wrap;
@@ -329,7 +316,7 @@ footer .row {
     gap: 20px;
 }
 
-/* Input alanı ve buton hizalama */
+
 footer .input-group {
     display: flex;
     gap: 5px;
@@ -341,7 +328,7 @@ footer .form-control {
 </style>
 
 
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

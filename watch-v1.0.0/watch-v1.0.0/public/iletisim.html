@@ -5,31 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kıvanç Kuyumculuk - İletişim</title>
 
-    <!-- Bootstrap CSS (CDN) -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- (Opsiyonel) Tema CSS - varsa projendeki dosyayı bırak -->
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <style>
-        /* 1. Sayfa Arka Plan Teması (Index'teki krem/görsel temayı korur) */
-        body {
-            /* İki ayrı arka plan katmanı tanımlıyoruz (Sağda görsel, solda krem) */
-            background:
-                url('assets/img/gallery/download.png') no-repeat right center fixed, /* SAĞDAKİ GÖRSEL */
-                #61380267; /* SOLDAKİ KREM TONU */
-            background-size: 50vw 100vh, auto; /* Yüzde 50'si görsel, kalanı düz renk */
-            min-height: 100vh;
-        }
-
-        /* 2. HEADER VE FOOTER METİN RENGİ DÜZELTMELERİ */
-        /* Krem arka planda metinlerin Koyu (#333) olmasını garantiler */
+  html, body {
+    background: url('assets/img/gallery/arkaplan3.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+  
+    height: 100vh;}
+       
         .navbar a, .navbar div, footer h5, footer a, footer p {
             color: #ffffff !important;
             text-decoration: none !important;
         }
 
-        /* 3. İletişim İçeriği Stilleri */
+
         main h1 {
             color: #D4AF37 !important;
             font-size: 3rem !important;
@@ -54,26 +48,24 @@
             border-color: #A38C59 !important;
         }
 
-        /* Responsive küçük ekran navigasyon üst boşluk düzeltme (fixed-top ile çakışma) */
         @media (max-width: 991.98px) {
             body { padding-top: 70px; }
         }
         @media (min-width: 992px) {
             body { padding-top: 100px; }
         }
-        /* ÜRÜNLERİMİZ dropdown arka plan rengi */
+       
 .nav-item.dropdown .dropdown-menu {
-    background-color: #ffffff !important; /* ARKA PLAN RENGİ */
+    background-color: #ffffff !important; 
     border-radius: 10px;
 }
 
-/* Dropdown içindeki yazı rengi */
 .nav-item.dropdown .dropdown-menu .dropdown-item {
     color: #333 !important;
     font-weight: 500;
 }
 
-/* Hover rengi */
+
 .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
     background-color: #ffffff !important;
     color: #000 !important;
@@ -93,6 +85,12 @@
             color: #D4AF37 !important;
             text-decoration: underline !important;
         }
+        #google-map-container + p,
+.text-muted,
+form label,
+form .form-label {
+    color: #ffffff !important;
+}
     </style>
 </head>
 <body>
@@ -104,17 +102,17 @@
                     <span class="fs-2 fw-bold ms-2">Kıvanç Kuyumculuk</span>
                 </a>
 
-                <!-- Toggler: data-bs-target should match the collapse id -->
+           
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Collapse element with matching id -->
+        
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
 
-                        <!-- ÜRÜNLERİMİZ dropdown (tek düzgün yapı) -->
+                       
                         <li class="nav-item dropdown px-2">
                             <a class="nav-link fw-bold dropdown-toggle" href="#" id="navbarDropdownProducts" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
@@ -128,7 +126,6 @@
                             </ul>
                         </li>
 
-                        <!-- KURUMSAL dropdown -->
                         <li class="nav-item dropdown px-2">
                             <a class="nav-link fw-bold dropdown-toggle" href="#" id="navbarDropdownCorporate" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
@@ -140,7 +137,7 @@
                             </ul>
                         </li>
 
-                        <!-- Diğer menü öğeleri -->
+             
                         <li class="nav-item px-2"><a class="nav-link fw-bold" href="iletisim.html">İLETİŞİM</a></li>
                       
                         <li class="nav-item px-2"><a class="nav-link fw-bold" href="admin.html">YÖNETİM PANELİ</a></li>
@@ -167,7 +164,7 @@
             <div class="container">
 
                 <h1 class="text-center fw-bold mb-5" style="color:#ffffff !important;">Bize Ulaşın</h1>
-S
+
                 <div class="row">
 
                     <div class="col-lg-6 mb-5">
@@ -214,13 +211,11 @@ S
             </div>
         </section>
     </main>
-
-    <!-- FOOTER -->
 <footer class="footer mt-5">
     <div class="container py-5">
         <div class="row text-center text-lg-start align-items-start">
 
-            <!-- Hızlı Menü -->
+  
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">MENÜ</h5>
                 <ul class="list-unstyled">
@@ -232,7 +227,7 @@ S
                 </ul>
             </div>
 
-            <!-- Sosyal Medya -->
+        
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">SOSYAL MEDYA</h5>
                 <ul class="list-unstyled">
@@ -240,7 +235,7 @@ S
                 </ul>
             </div>
 
-            <!-- İletişim -->
+      
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">İLETİŞİM</h5>
                 <ul class="list-unstyled">
@@ -250,7 +245,6 @@ S
                 </ul>
             </div>
 
-            <!-- Bültene Kayıt -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">BÜLTENE KAYIT OL</h5>
                 <form>
@@ -267,13 +261,13 @@ S
 </footer>
 
 <style>
-/* Footer arka plan */
+
 footer.footer {
     background-color: #222 !important;
     padding: 60px 0 !important;
 }
 
-/* Yazı renkleri ve linkler */
+
 footer h5,
 footer p,
 footer span,
@@ -282,19 +276,19 @@ footer a.footer-link {
     text-decoration: none;
 }
 
-/* Link hover efekti */
+
 footer a.footer-link:hover {
-    color: #D4AF37 !important; /* Altın sarısı */
+    color: #D4AF37 !important; 
     text-decoration: underline;
 }
 
-/* Buton hover */
+
 footer .btn-primary:hover {
     background-color: #8b5c09;
     border-color: #8b5c09;
 }
 
-/* Responsive düzen için row flex */
+
 footer .row {
     display: flex;
     flex-wrap: wrap;
@@ -302,7 +296,7 @@ footer .row {
     gap: 20px;
 }
 
-/* Input alanı ve buton hizalama */
+
 footer .input-group {
     display: flex;
     gap: 5px;
@@ -314,10 +308,10 @@ footer .form-control {
 </style>
 
 
-    <!-- Bootstrap JS bundle (Popper dahil) -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- (Opsiyonel) Basit contact form davranışı: sadece önizleme -->
+
     <script>
         document.getElementById('contactForm')?.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -330,7 +324,7 @@ footer .form-control {
                 return;
             }
 
-            // Burada gerçek bir gönderim yok - projede backend olursa fetch ile server'a gönderilir.
+           
             alert('Geri bildiriminiz alındı. Teşekkürler!');
             this.reset();
         });

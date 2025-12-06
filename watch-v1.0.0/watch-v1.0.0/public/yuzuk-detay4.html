@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <style>
-        body {
-            background:
-                url('assets/img/gallery/download.png') no-repeat right center fixed,
-                #61380267;
-            background-size: 50vw 100vh, auto;
-            min-height: 100vh;
-        }
+   html, body {
+    background: url('assets/img/gallery/arkaplan3.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+  
+    height: 100vh;}
 
         .navbar a,
         .navbar div {
@@ -81,6 +80,24 @@
 .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
     background-color: #ffffff !important;
     color: #000 !important;
+}
+.product-details p,
+.product-details ul,
+.product-details ul li {
+    color: #ffffff;
+}
+.product-img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+    
+    /* Keskinlik için */
+    image-rendering: auto; /* default, bazı durumlarda daha net olabilir */
+    image-rendering: crisp-edges; /* pikselli görünümleri keskinleştirir */
+    image-rendering: pixelated; /* çok düşük çözünürlükte pikselli etkisi */
+    
+    /* Alternatif olarak kontrast ve keskinlik artırma */
+    filter: contrast(1.2) saturate(1.1);
 }
     </style>
 </head>
@@ -144,12 +161,12 @@
 
             <!-- FOTOĞRAF -->
             <div class="col-lg-6 mb-5">
-                <img src="assets/img/gallery/yüzük4.png" alt="Altın Yüzük" class="product-image">
+                <img src="assets/img/gallery/yüzük4.png" alt="G Harfli Yüzük" class="product-image">
             </div>
 
             <!-- METİN -->
-            <div class="col-lg-6">
-                <h1 class="fw-bold mb-3">Altın Yüzük Model 1</h1>
+            <div class="col-lg-6 product-details">
+                <h1 class="fw-bold mb-3">G Harfli Yüzük </h1>
 
                 <p class="price">4.750 TL</p>
 
@@ -283,8 +300,8 @@ footer .form-control {
     document.getElementById("addToCartBtn").addEventListener("click", function () {
 
         const product = {
-            name: "Altın Bilezik",
-            price: 5500,
+            name: " G Harfli Yüzük",
+            price: 15500,
             image: "assets/img/gallery/yüzük4.png",
             quantity: 1
         };
