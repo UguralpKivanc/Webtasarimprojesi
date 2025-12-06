@@ -112,7 +112,7 @@
                 </li>
 
                 <li class="nav-item px-2"><a class="nav-link fw-bold" href="iletisim.html">İLETİŞİM</a></li>
-                <li class="nav-item px-2"><a class="nav-link fw-bold" href="duyurular.html">DUYURULAR</a></li>
+               
                 <li class="nav-item px-2"><a class="nav-link fw-bold" href="sepet.html">SEPETİM</a></li>
 
             </ul>
@@ -200,35 +200,104 @@
 
         </div>
     </div>
+<!-- FOOTER -->
+<footer class="footer mt-5">
+    <div class="container py-5">
+        <div class="row text-center text-lg-start align-items-start">
+
+            <!-- Hızlı Menü -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">MENÜ</h5>
+                <ul class="list-unstyled">
+                    <li><a href="yuzukler.html" class="footer-link">Yüzükler</a></li>
+                    <li><a href="kolyeler.html" class="footer-link">Kolyeler</a></li>
+                    <li><a href="bilezikler.html" class="footer-link">Bilezikler</a></li>
+                    <li><a href="bileklikler.html" class="footer-link">Bileklikler</a></li>
+                    <li><a href="iletisim.html" class="footer-link">İletişim</a></li>
+                </ul>
+            </div>
+
+            <!-- Sosyal Medya -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">SOSYAL MEDYA</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.instagram.com/kivancjewelry/" target="_blank" class="footer-link">Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- İletişim -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">İLETİŞİM</h5>
+                <ul class="list-unstyled">
+                    <li><span class="text-white">📍 Sile, İstanbul</span></li>
+                    <li><span class="text-white">📞 +90 (551) 355 34 34</span></li>
+                    <li><span class="text-white">✉️ info@kivancjewelry.com</span></li>
+                </ul>
+            </div>
+
+            <!-- Bültene Kayıt -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">BÜLTENE KAYIT OL</h5>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email adresiniz">
+                        <button class="btn btn-primary" type="submit">Gönder</button>
+                    </div>
+                </form>
+                <p class="mt-4 text-white">Web Sitesi Tasarımcısı: Uğuralp Kıvanç</p>
+            </div>
+
+        </div>
+    </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+/* Footer arka plan */
+footer.footer {
+    background-color: #222 !important;
+    padding: 60px 0 !important;
+}
 
-<script>
-    // Sepete ürün ekleme fonksiyonu
-    document.getElementById("addToCartBtn").addEventListener("click", function () {
+/* Yazı renkleri ve linkler */
+footer h5,
+footer p,
+footer span,
+footer a.footer-link {
+    color: #fff !important;
+    text-decoration: none;
+}
 
-        const product = {
-            name: "Altın Kolye",
-            price: 3200,
-            image: "assets/img/gallery/bileklik4.png",
-            quantity: 1
-        };
+/* Link hover efekti */
+footer a.footer-link:hover {
+    color: #D4AF37 !important; /* Altın sarısı */
+    text-decoration: underline;
+}
 
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+/* Buton hover */
+footer .btn-primary:hover {
+    background-color: #8b5c09;
+    border-color: #8b5c09;
+}
 
-        const exist = cart.find(item => item.name === product.name);
-        if (exist) {
-            exist.quantity += 1;
-        } else {
-            cart.push(product);
-        }
+/* Responsive düzen için row flex */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-        localStorage.setItem("cart", JSON.stringify(cart));
+/* Input alanı ve buton hizalama */
+footer .input-group {
+    display: flex;
+    gap: 5px;
+}
 
-        alert("Ürün sepete eklendi!");
-    });
+footer .form-control {
+    flex: 1;
+}
+</style>
+
 </script>
 
 </body>

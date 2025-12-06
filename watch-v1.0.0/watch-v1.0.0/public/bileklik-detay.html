@@ -46,19 +46,8 @@
             background-color: #A38C59 !important;
         }
 
-        footer {
-            background-color: #222 !important;
-            padding: 60px 0 !important;
-            margin-top: 130px !important;
-        }
-
-        footer h5, footer p, footer a {
-            color: #ffffff !important;
-        }
-
-        footer a:hover {
-            color: #D4AF37 !important;
-            /* ÜRÜNLERİMİZ dropdown arka plan rengi */
+       
+      
 .nav-item.dropdown .dropdown-menu {
     background-color: #ffffff !important; /* ARKA PLAN RENGİ */
     border-radius: 10px;
@@ -75,7 +64,7 @@
     background-color: #ffffff !important;
     color: #000 !important;
 }
-        }
+        
     </style>
 </head>
 
@@ -112,7 +101,7 @@
                 </li>
 
                 <li class="nav-item px-2"><a class="nav-link fw-bold" href="iletisim.html">İLETİŞİM</a></li>
-                <li class="nav-item px-2"><a class="nav-link fw-bold" href="duyurular.html">DUYURULAR</a></li>
+                
                 <li class="nav-item px-2"><a class="nav-link fw-bold" href="sepet.html">SEPETİM</a></li>
 
             </ul>
@@ -160,47 +149,7 @@
 
 </section>
 
-<footer>
-    <div class="container py-5">
-        <div class="row">
 
-            <div class="col-6 col-sm-4 col-xl-3 mb-3">
-                <h5 class="fw-bold mb-3">WATCH</h5>
-            </div>
-
-            <div class="col-6 col-sm-4 col-xl-3 mb-3">
-                <h5 class="fw-bold mb-3">MENU</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Shipping Info</a></li>
-                    <li><a href="#">Refunds</a></li>
-                    <li><a href="#">How to Order</a></li>
-                    <li><a href="#">How to Track</a></li>
-                    <li><a href="#">Size Guides</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-sm-4 col-xl-3 mb-3">
-                <h5 class="fw-bold mb-3">Contact Us</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Help/FAQ</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-xl-3">
-                <h5 class="fw-bold mb-3">Signup for News</h5>
-                <form>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="email address">
-                        <button class="btn btn-primary" type="submit">Send</button>
-                    </div>
-                </form>
-                <p class="mt-4 text-white">Web Sitesi Tasarımcısı: Öğrenci Adı / No</p>
-            </div>
-
-        </div>
-    </div>
-</footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -230,6 +179,105 @@
         alert("Ürün sepete eklendi!");
     });
 </script>
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="footer mt-5">
+    <div class="container py-5">
+        <div class="row text-center text-lg-start align-items-start">
+
+            <!-- Hızlı Menü -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">MENÜ</h5>
+                <ul class="list-unstyled">
+                    <li><a href="yuzukler.html" class="footer-link">Yüzükler</a></li>
+                    <li><a href="kolyeler.html" class="footer-link">Kolyeler</a></li>
+                    <li><a href="bilezikler.html" class="footer-link">Bilezikler</a></li>
+                    <li><a href="bileklikler.html" class="footer-link">Bileklikler</a></li>
+                    <li><a href="iletisim.html" class="footer-link">İletişim</a></li>
+                </ul>
+            </div>
+
+            <!-- Sosyal Medya -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">SOSYAL MEDYA</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.instagram.com/kivancjewelry/" target="_blank" class="footer-link">Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- İletişim -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">İLETİŞİM</h5>
+                <ul class="list-unstyled">
+                    <li><span class="text-white">📍 Sile, İstanbul</span></li>
+                    <li><span class="text-white">📞 +90 (551) 355 34 34</span></li>
+                    <li><span class="text-white">✉️ info@kivancjewelry.com</span></li>
+                </ul>
+            </div>
+
+            <!-- Bültene Kayıt -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-xl font-bold mb-4 text-white">BÜLTENE KAYIT OL</h5>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email adresiniz">
+                        <button class="btn btn-primary" type="submit">Gönder</button>
+                    </div>
+                </form>
+                <p class="mt-4 text-white">Web Sitesi Tasarımcısı: Uğuralp Kıvanç</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<style>
+/* Footer arka plan */
+footer.footer {
+    background-color: #222 !important;
+    padding: 60px 0 !important;
+}
+
+/* Yazı renkleri ve linkler */
+footer h5,
+footer p,
+footer span,
+footer a.footer-link {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Link hover efekti */
+footer a.footer-link:hover {
+    color: #D4AF37 !important; /* Altın sarısı */
+    text-decoration: underline;
+}
+
+/* Buton hover */
+footer .btn-primary:hover {
+    background-color: #8b5c09;
+    border-color: #8b5c09;
+}
+
+/* Responsive düzen için row flex */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Input alanı ve buton hizalama */
+footer .input-group {
+    display: flex;
+    gap: 5px;
+}
+
+footer .form-control {
+    flex: 1;
+}
+</style>
+
 
 </body>
 </html>

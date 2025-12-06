@@ -21,7 +21,7 @@
 <body class="flex">
 
 <!-- SIDEBAR -->
-<div class="sidebar h-screen bg-gray-800 text-white p-5 fixed left-0 top-0 flex flex-col">
+<div class="sidebar h-screen bg-gray-800 text-white p-5 fixed left-0 top-0 flex flex-col hidden">
     <h2 class="text-2xl font-bold mb-8">Admin Panel</h2>
 
     <button class="menu-item text-left py-3 px-4 rounded-lg mb-2" onclick="showPage('dashboard')">📊 Dashboard</button>
@@ -128,6 +128,13 @@
 
 
 <script>
+    const username = document.getElementById("username");
+const password = document.getElementById("password");
+const loginBox = document.getElementById("loginBox");
+const dashboard = document.getElementById("dashboard");
+const sidebar = document.querySelector(".sidebar");
+const error = document.getElementById("error");
+
 /* ------------------ LOGIN ------------------ */
 const ADMIN_USER = "admin";
 const ADMIN_PASS = btoa("12345");
@@ -136,6 +143,8 @@ function login() {
     if (username.value === ADMIN_USER && btoa(password.value) === ADMIN_PASS) {
         loginBox.classList.add("hidden");
         dashboard.classList.remove("hidden");
+         sidebar.classList.remove("hidden");
+          error.classList.add("hidden"); 
         loadCharts();
         loadDuyurular();
     } else error.classList.remove("hidden");
