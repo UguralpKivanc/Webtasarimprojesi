@@ -18579,35 +18579,35 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
 .watch-tabs .nav-item.show .nav-link {
   border-bottom-color: #757575;
 }
-/* Hero Content Ana Konumlandırma */
+
 .hero-content {
-    /* Ekranın dikeyde (yukarı-aşağı) ortalaması için */
+   
    
     
-   text-align: left !important; /* Metinleri yatayda ortalama */
+   text-align: left !important; 
     color: #333 !important; 
-    z-index: 10; /* Diğer her şeyin üstünde olması için */
-    width: 90%; /* Genişlik kısıtlaması */
+    z-index: 10; 
+    width: 90%; 
     max-width: 800px;
 
 }
 
-/* Başlık Stili */
+
 .hero-content h1 {
-    font-size: 3.8rem; /* Büyük ve dikkat çekici font */
+    font-size: 3.8rem; 
     font-weight: 800;
     margin-bottom: 5px;
     letter-spacing: 1px;
     color: #ffffff !important; 
 }
-/* Alt Başlık Stili */
+
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 40px;
-    opacity: 0.85; /* Hafif şeffaflık */
+    opacity: 0.85; 
 }
 
-/* Butonlar İçin Genel Stil */
+
 .cta-buttons a.btn {
     display: inline-block;
     padding: 15px 35px;
@@ -18619,78 +18619,78 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 5px;
 }
 
-/* Birincil Buton (Daha Vurgulu) */
+
 .primary-btn {
-    background-color: #A38C59; /* Altın/Sarı Tonu */
+    background-color: #A38C59; 
     border-color: #A38C59;
     color: #fff;
 }
 
 .primary-btn:hover {
-    background-color: #D4AF37; /* Hover'da daha parlak altın */
+    background-color: #D4AF37; 
     border-color: #D4AF37;
 }
 
 .secondary-btn {
-    /* Önceki şeffaf arkaplanı değiştiriyoruz: */
-    background-color: #D4AF37 !important; /* Altın Rengi Dolgu */
+   
+    background-color: #D4AF37 !important; 
     border-color: #D4AF37 !important;
-    color: #333 !important; /* Metin rengi koyu olsun */
+    color: #333 !important; 
 }
 
 .secondary-btn:hover {
-    background-color: #A38C59 !important; /* Hover'da hafif koyu altın */
+    background-color: #A38C59 !important; 
     border-color: #A38C59 !important;
-    color: #fff !important; /* Hover'da metin rengi beyaz olsun */
+    color: #fff !important; 
 }
-/* Görselin Daha Belirgin Olması İçin */
+
 .hero-product-img {
-    max-height: 500px; /* Görseli çok büyütmemek için */
+    max-height: 500px; 
     margin-top: 30px; 
-    /* Opsiyonel: Eğer görselin hafif parlamasını isterseniz */
+   
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4)); 
 }
 
-/* Hero Content'in sol tarafta kalması için (Daha önceki ortalama CSS'ini kaldırın) */
+
 .hero-content {
-    /* Daha önceki absolute/translate stillerini KALDIRIN veya BURADAKİLERLE DEĞİŞTİRİN */
+   
     position: static; 
-    text-align: left; /* Metni sola hizala */
+    text-align: left; 
     padding-right: 20px;
 }
 .hero-content h1 {
-    font-size: 3.5rem; /* Yan yana sığması için küçülttük */
+    font-size: 3.5rem; 
 }
-/* Kategori Kartları Genel Stili */
+
 .category-card {
    background-color: #fff !important;
-    position: relative; /* Overlay'in konumlanması için gerekli */
-    overflow: hidden; /* Taşmaları engeller */
+    position: relative; 
+    overflow: hidden; 
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Görsel Stili */
+
 .category-card img {
     width: 100%;
-    height: 350px; /* Sabit bir yükseklik vererek görselleri hizalar */
-    object-fit: cover; /* Görselin alanı kaplamasını sağlar */
+    height: 350px; 
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
-/* Kartın üzerine gelindiğinde görselin hafif büyümesi */
+
 .category-card:hover img {
     transform: scale(1.05);
 }
 
-/* Görsel Üzerindeki Kaplama (Overlay) Stili */
+
 .card-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Hafif karartma */
+    background: rgba(0, 0, 0, 0.4); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18701,7 +18701,6 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
 }
 
-/* Kategori Başlığı Stili */
 .card-overlay .card-title {
     font-size: 2rem;
     font-weight: 700;
@@ -18710,10 +18709,10 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
     text-transform: uppercase;
 }
 
-/* BURASI SİZİN ARADIĞINIZ BUTON STİLİDİR */
+
 .category-btn {
     background-color: transparent;
-    /* Arka planı beyaz yaptığımız için koyu renk çerçeve kullanıyoruz */
+  
     border: 2px solid #333; 
     color: #fff; 
     padding: 10px 20px;
@@ -18724,12 +18723,11 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .category-btn:hover {
-    background-color: #333; /* Hover'da koyu dolgu */
+    background-color: #333; 
     color: #fff;
 }
-/* Navigasyon Çubuğundaki Logo Boyutu */
 .navbar-logo {
-    height: 200px; /* Logoyu 40 piksel yüksekliğinde sabitleyelim */
+    height: 200px; 
     width: auto;
 }
 html, body {
@@ -18737,38 +18735,33 @@ html, body {
     margin: 0;
     padding: 0;
 }
-/*-----------------------------------------------
-|   User Styles
------------------------------------------------*/
 
-/*# sourceMappingURL=theme.css.map */
-/* Yorum Kartları Genel Stili (Sınıf: .card) */
 .col-md-6 .card {
-    /* Eski siyah arka planı temizliyoruz */
-    background-color: rgba(255, 255, 255, 0.7) !important; /* Yarı saydam beyaz/krem */
-    color: #333 !important; /* Metinleri koyu gri yapıyoruz */
+  
+    background-color: rgba(255, 255, 255, 0.7) !important; 
+    color: #333 !important; 
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #D4AF37; /* Altın rengi vurgu çizgisi */
+    border-left: 5px solid #D4AF37; 
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Yumuşak bir gölge */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     min-height: 200px;
 }
 
-/* Yorum Metinleri */
+
 .review-text {
     font-size: 1.1rem;
     font-style: italic;
-    color: #333; /* Okunurluk için koyu metin */
+    color: #333; 
     margin-bottom: 20px;
 }
 
-/* Yorumcu Adı (h6 etiketi) */
+
 .card h6 {
     font-weight: 700 !important;
     color: #555 !important;
 }
 
-/* Yorumcu Görseli */
+
 .card .img-fluid {
     width: 60px;
     height: 60px;
@@ -18777,54 +18770,54 @@ html, body {
     margin-right: 15px;
     
 }
-/* Footer (Alt Bilgi) Genel Stili */
+
 footer {
     padding-top: 50px!important;
     padding-bottom: 30px!important;
 }
 
-/* Footer Başlıkları (MENU, Contact Us, Signup for Our Latest News) */
+
 footer h5 {
-    color: #333 !important; /* Başlıkları koyu gri yap */
+    color: #333 !important; 
     font-weight: 700 !important;
 }
 
-/* Footer Linkleri (Shipping Info, How to Order, vb.) */
+
 .list-unstyled a {
-    color: #555 !important; /* Linkleri okunabilir koyu ton yap */
+    color: #555 !important; 
     text-decoration: none!important;
     font-size: 0.9rem!important;
     transition: color 0.3s!important;
 }
 
 .list-unstyled a:hover {
-    color: #D4AF37 !important; /* Hover'da Altın rengi vurgu */
-}
-/* Abonelik Alanı Başlığı (.col-12 col-xl-3 içindeki h5) */
-.col-xl-3 > h5 {
-    white-space: nowrap!important; /* Başlığın tek satırda kalmasını sağlar */
+    color: #D4AF37 !important; 
 }
 
-/* Formun Kendisi (input-group yapısını kullanır) */
+.col-xl-3 > h5 {
+    white-space: nowrap!important; 
+}
+
+
 .input-group {
-    /* Form elemanlarını yatayda esnek tutar */
+   
     display: flex!important;
     max-width: 300px!important;
 }
 
-/* E-posta Giriş Alanı */
+
 .input-group .form-control {
-    border-radius: 5px 0 0 5px !important; /* Sol taraf yuvarlak, sağ taraf düz */
+    border-radius: 5px 0 0 5px !important; 
     padding: 10px 15px!important;
     height: auto!important;
 }
 
-/* Submit Butonu */
+
 .input-group button.btn-primary {
-    background-color: #D4AF37 !important; /* Altın rengi buton */
+    background-color: #D4AF37 !important; 
     border-color: #D4AF37 !important;
     color: #fff !important;
-    border-radius: 0 5px 5px 0 !important; /* Sol taraf düz, sağ taraf yuvarlak */
+    border-radius: 0 5px 5px 0 !important; 
     padding: 10px 15px!important;
     font-weight: 600!important;
 }
@@ -18834,47 +18827,47 @@ footer h5 {
     border-color: #A38C59 !important;
 }
 
-/* Yorum Kartlarını Temizleme (Eğer bg-black kullanıyorsa) */
-.card-h-100 { /* Veya yorum kartının ana class adı */
-    background-color: #ffffff !important; /* Beyaz veya yarı saydam yapın */
-    color: #333 !important; /* Metinleri koyu yapın */
+
+.card-h-100 { 
+    background-color: #ffffff !important; 
+    color: #333 !important; 
 }
-/* Alt Menü (Dropdown) Görünürlüğü ve Stili */
+
 .dropdown-menu {
-    /* Menünün görünür olmasını garanti eder */
+   
  
     
-    /* Konumu ve arka planı ayarlar */
+   
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000; /* Her şeyin üstünde görünmesini sağlar */
-    background-color: #f8f8f8; /* Açık krem arka plan */
+    z-index: 1000; 
+    background-color: #f8f8f8; 
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
-/* Navigasyon menüsündeki link metinlerinin görünürlüğünü garanti eder */
+
 .dropdown-item {
-    color: #333 !important; /* Koyu renk yapar */
+    color: #333 !important; 
 }
-/* --- Popüler Kategoriler Siyah Bant Ayarı --- */
+
 
 
 #categories {
-    background: transparent !important; /* Bölümün kendi rengini iptal et */
+    background: transparent !important; 
 }
 
-/* Duyuru resmi büyüklüğü */
+
 .duyuru-resim {
-    max-width: 90%; /* Kolonun tamamını kaplasın */
+    max-width: 90%; 
     height: auto;
     box-shadow: 0 12px 20px rgba(0,0,0,0.3);
     border-radius: 10px;
      margin-top: 90px !important; 
 }
 
-/* Başlık ve alt yazı */
+
 .duyuru-baslik {
     font-size: 48px;
     font-weight: bold;
@@ -18889,7 +18882,7 @@ footer h5 {
     text-transform: uppercase;
 }
 
-/* Buton */
+
 .duyuru-btn {
     display: inline-block;
     background-color: #685831;
@@ -18907,7 +18900,6 @@ footer h5 {
     transform: scale(1.05);
 }
 
-/* Responsive: Küçük ekranlarda alt alta */
 @media (max-width: 991px) {
     .hero-duyuru-container .row {
         flex-direction: column;
@@ -18920,9 +18912,9 @@ footer h5 {
     }
 }
 .populer-kategoriler-bolum {
-    margin-top: 120px !important;  /* İstersen 150-200 yapabilirsin */
+    margin-top: 120px !important;  
 }
 .site-logo {
-    width:145px;   /* küçük logo için idealdir, istersen büyütebilirsin */
+    width:145px;   
     height: auto;
 }
