@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kıvanç Kuyumculuk - Yüzük Detay</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Tema -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/theme.css">
 
     <style>
@@ -65,19 +63,19 @@
         footer a:hover {
             color: #D4AF37 !important;
         }
-        /* ÜRÜNLERİMİZ dropdown arka plan rengi */
+
 .nav-item.dropdown .dropdown-menu {
-    background-color: #ffffff !important; /* ARKA PLAN RENGİ */
+    background-color: #ffffff !important; 
     border-radius: 10px;
 }
 
-/* Dropdown içindeki yazı rengi */
+
 .nav-item.dropdown .dropdown-menu .dropdown-item {
     color: #333 !important;
     font-weight: 500;
 }
 
-/* Hover rengi */
+
 .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
     background-color: #ffffff !important;
     color: #000 !important;
@@ -92,12 +90,12 @@
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.18);
     
-    /* Keskinlik için */
-    image-rendering: auto; /* default, bazı durumlarda daha net olabilir */
-    image-rendering: crisp-edges; /* pikselli görünümleri keskinleştirir */
-    image-rendering: pixelated; /* çok düşük çözünürlükte pikselli etkisi */
+   
+    image-rendering: auto; 
+    image-rendering: crisp-edges; 
+    image-rendering: pixelated; 
     
-    /* Alternatif olarak kontrast ve keskinlik artırma */
+ 
     filter: contrast(1.2) saturate(1.1);
 }
     </style>
@@ -105,10 +103,16 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block">
+ 
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-2" href="index.html">Kıvanç Kuyumculuk</a>
+        <a class="navbar-brand d-inline-flex align-items-center" href="index.html">
+    <img src="assets/img/logo5.png" 
+         alt="Logo" 
+         style="width:55px; height:auto; margin-right:10px;">
+    <span class="text-light fs-2 fw-bold">Kıvanç Kuyumculuk</span>
+</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Menü Aç">
@@ -118,7 +122,7 @@
             <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <!-- ÜRÜNLER DROPDOWN -->
+             
                     <li class="nav-item dropdown px-2">
                         <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             ÜRÜNLERİMİZ
@@ -131,7 +135,7 @@
                         </ul>
                     </li>
 
-                    <!-- KURUMSAL -->
+              
                     <li class="nav-item dropdown px-2">
                         <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             KURUMSAL
@@ -155,17 +159,17 @@
         </div>
     </nav>
 
-    <!-- ÜRÜN DETAY -->
+    
     <section class="container" style="padding-top:150px; padding-bottom:80px;">
 
         <div class="row align-items-center">
 
-            <!-- FOTOĞRAF -->
+          
             <div class="col-lg-6 mb-5">
                 <img src="assets/img/gallery/yüzük1.png" alt="Baget Yüzük" class="product-image">
             </div>
 
-            <!-- METİN -->
+        
             <div class="col-lg-6 product-details">
                 <h1 class="fw-bold mb-3">Baget Yüzük</h1>
 
@@ -185,7 +189,7 @@
                     <li>• Özel kutusunda teslim edilir</li>
                 </ul>
 
-                <!-- SEPETE EKLE -->
+         
                 <button id="addToCartBtn" class="btn btn-buy btn-lg w-100 mt-4">
                     Sepete Ekle
                 </button>
@@ -195,12 +199,12 @@
 
     </section>
 
-    <!-- FOOTER -->
+    
 <footer class="footer mt-5">
     <div class="container py-5">
         <div class="row text-center text-lg-start align-items-start">
 
-            <!-- Hızlı Menü -->
+        
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">MENÜ</h5>
                 <ul class="list-unstyled">
@@ -212,7 +216,6 @@
                 </ul>
             </div>
 
-            <!-- Sosyal Medya -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">SOSYAL MEDYA</h5>
                 <ul class="list-unstyled">
@@ -220,17 +223,19 @@
                 </ul>
             </div>
 
-            <!-- İletişim -->
+         
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">İLETİŞİM</h5>
                 <ul class="list-unstyled">
-                    <li><span class="text-white">📍 Sile, İstanbul</span></li>
+                    <li><span class="text-white">📍 Çavuş Mahallesi Üsküdar Caddesi No:162 Şile/İSTANBUL
+
+</span></li>
                     <li><span class="text-white">📞 +90 (551) 355 34 34</span></li>
                     <li><span class="text-white">✉️ info@kivancjewelry.com</span></li>
                 </ul>
             </div>
 
-            <!-- Bültene Kayıt -->
+      
             <div class="col-lg-3 col-md-6 mb-4">
                 <h5 class="text-xl font-bold mb-4 text-white">BÜLTENE KAYIT OL</h5>
                 <form>
@@ -247,13 +252,13 @@
 </footer>
 
 <style>
-/* Footer arka plan */
+
 footer.footer {
     background-color: #222 !important;
     padding: 60px 0 !important;
 }
 
-/* Yazı renkleri ve linkler */
+
 footer h5,
 footer p,
 footer span,
@@ -262,19 +267,19 @@ footer a.footer-link {
     text-decoration: none;
 }
 
-/* Link hover efekti */
+
 footer a.footer-link:hover {
-    color: #D4AF37 !important; /* Altın sarısı */
+    color: #D4AF37 !important; 
     text-decoration: underline;
 }
 
-/* Buton hover */
+
 footer .btn-primary:hover {
     background-color: #8b5c09;
     border-color: #8b5c09;
 }
 
-/* Responsive düzen için row flex */
+
 footer .row {
     display: flex;
     flex-wrap: wrap;
@@ -282,7 +287,7 @@ footer .row {
     gap: 20px;
 }
 
-/* Input alanı ve buton hizalama */
+
 footer .input-group {
     display: flex;
     gap: 5px;
@@ -294,10 +299,10 @@ footer .form-control {
 </style>
 
 
-    <!-- Bootstrap JS -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    // Sepete ürün ekleme fonksiyonu
+  
     document.getElementById("addToCartBtn").addEventListener("click", function () {
 
         const product = {
@@ -307,10 +312,9 @@ footer .form-control {
             quantity: 1
         };
 
-        // LocalStorage'dan sepeti çek
+        
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-        // Aynı üründen varsa adet arttır
         const exist = cart.find(item => item.name === product.name);
         if (exist) {
             exist.quantity += 1;
@@ -318,7 +322,7 @@ footer .form-control {
             cart.push(product);
         }
 
-        // LocalStorage’a kaydet
+
         localStorage.setItem("cart", JSON.stringify(cart));
 
         alert("Ürün sepete eklendi!");
